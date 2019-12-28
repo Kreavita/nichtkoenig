@@ -54,6 +54,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
     border-radius: 5px 5px 5px 5px;
     padding: 5px;
     box-sizing: border-box;
@@ -93,18 +94,19 @@ body{
     margin-bottom: 5px;
 }
 .alertbox #action{
+    width: 100%;
     display: inline-flex;
     justify-content: space-around;
 }
 .superbtn{
-    display: block;
+    display: flex;
+    text-align: center;
     position: relative;
-    padding: 2px;
+    padding: 5px;
     cursor: pointer;
     transition: 0.5s background-color;
 }
 .superbtn:active{
-background-color: black;
 }
 .superbtn::before{
     position: absolute;
@@ -112,12 +114,12 @@ background-color: black;
     left: 0;
     width: 100%;
     height: 100%;
-    max-width: 0%;
-    max-height: 0%;
+    max-width: 0;
+    max-height: 0;
     border-left: 2px solid #263238;
     border-top: 2px solid #263238;
     content: '';
-    transition: 0.5s max-width;
+    transition: 0.5s max-width, 0.5s max-height;
 }
 .superbtn:hover::before{
     max-width: 100%;
@@ -131,12 +133,12 @@ background-color: black;
     right: 0;
     width: 100%;
     height: 100%;
-    max-width: 0%;
-    max-height: 0%;
+    max-width: 0;
+    max-height: 0;
     border-right: 2px solid #263238;
     border-bottom: 2px solid #263238;
     content: '';
-    transition: 0.5s max-width;
+    transition: 0.5s max-width, 0.5s max-height;
 }
 .superbtn:hover::after{
     max-width: 100%;
