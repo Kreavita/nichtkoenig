@@ -10,23 +10,42 @@
 <body>
     <div id="header">
         <span class="container">
-                <span class="titlebtn" id="home">NICHTKOENIG</span>
-                <span class="titlebtn"id="rules">RULES</span>
+                <span class="titlebtn" id="home" onclick="nav.home()">
+                    <img class="titleimg" src="icons/crown.svg"></img>
+                    <div>NICHTKOENIG</div>
+                </span>
+                <span class="titlebtn" id="rules" onclick="nav.rules()">
+                    <img class="titleimg" src="icons/info.svg"></img>
+                    <div>RULES</div>
+                </span>
         </span>
         <span class="container">
-                <span class="titlebtn" id="creategame">CREATE GAME</span>
-                <span class="titlebtn" id="joingame">JOIN GAME</span>        
+                <span class="titlebtn" id="creategame" onclick="nav.creategame()">
+                    <img class="titleimg" src="icons/plus-square.svg"></img>
+                    <div>CREATE GAME</div>
+                </span>
+                <span class="titlebtn" id="joingame" onclick="nav.joingame()">
+                    <img class="titleimg" src="icons/play-circle.svg"></img>
+                    <div>JOIN GAME</div>
+                </span>        
         </span>
         <span class="container">
-                <span class="titlebtn" id="login">LOGIN</span>
-                <span class="titlebtn" id="register">REGISTER</span>
+                <span class="titlebtn" id="account" onclick="nav.account()">
+                    <img class="titleimg" src="icons/user-check.svg"></img>
+                    <div>ACCOUNT</div>
+                </span>
+                <span class="titlebtn" id="rules" onclick="nav.rules()">
+                    <img class="titleimg" src="icons/log-in.svg"></img>
+                </span>
         </span>
     </div>
     <div id="main">
 
     </div>
     <div id="footer">
-        &copy; Kreaverse Studios 2020
+        <div>&copy; Kreaverse Studios 2020 <a href="https://github.com/kreavita/nichtkoenig">Github</a></div>
+        <div>Icons made by <a href="https://twitter.com/colebemis">@Colebemis</a> from <a href="https://feathericons.com/" title="Feather Icons">feathericons.com</a></div>
+        <div>Crown Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
 </body>
 </html>
