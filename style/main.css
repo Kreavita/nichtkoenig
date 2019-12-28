@@ -23,6 +23,9 @@ h1::after{
     justify-content: space-around;
     text-align: center;
 }
+#main{
+    margin-left: 10px;
+}
 #header{
     -moz-user-select: none;
     -webkit-user-select: none;
