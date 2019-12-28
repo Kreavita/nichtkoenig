@@ -109,6 +109,9 @@ body{
 .superbtn:active{
 }
 .superbtn::before{
+    display: block;
+    opacity: 0;
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -116,18 +119,23 @@ body{
     height: 100%;
     max-width: 0;
     max-height: 0;
-    border-left: 2px solid #263238;
-    border-top: 2px solid #263238;
+    border-top: 3px solid #263238;
+    border-left: 3px solid #263238;
     content: '';
-    transition: 0.5s max-width, 0.5s max-height;
+    transition: 0.5s max-width, 0.1s max-height, 0.5s opacity;
 }
 .superbtn:hover::before{
+    opacity: 1;
     max-width: 100%;
 }
 .superbtn:active::before{
+    opacity: 1;
     max-height: 100%;
 }
 .superbtn::after{
+    display: block;
+    opacity: 0;
+    box-sizing: border-box;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -135,15 +143,17 @@ body{
     height: 100%;
     max-width: 0;
     max-height: 0;
-    border-right: 2px solid #263238;
-    border-bottom: 2px solid #263238;
+    border-right: 3px solid #263238;
+    border-bottom: 3px solid #263238;
     content: '';
-    transition: 0.5s max-width, 0.5s max-height;
+    transition: 0.5s max-width, 0.1s max-height, 0.5s opacity;
 }
 .superbtn:hover::after{
+    opacity: 1;
     max-width: 100%;
 }
 .superbtn:active::after{
+    opacity: 1;
     max-height: 100%;
 }
 
