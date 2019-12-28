@@ -209,7 +209,7 @@ h1::after{
 .vertical-menu{
     display: table;
 }
-.vertical-menu input, .vertical-menu div, .vertical-menu span{
+.vertical-menu .item{
     display: table-row;
 }
 .toast-container{
