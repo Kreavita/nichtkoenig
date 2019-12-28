@@ -121,6 +121,7 @@ h1::after{
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 50px rgba(0,0,0,0.2);
+    border: 3px solid #004D40;
     border-radius: 5px 5px 5px 5px;
     padding: 5px;
     box-sizing: border-box;
@@ -137,7 +138,7 @@ h1::after{
 }
 .alertbox #title::after{
     display: block;
-    height: 2px;
+    height: 2.5px;
     background-color: #263238;
     content: '';
     margin-top: 5px;
@@ -151,7 +152,7 @@ h1::after{
 }
 .alertbox #content::after{
     display: block;
-    height: 2px;
+    height: 2.5px;
     background-color: #263238;
     content: '';
     margin-top: 5px;
