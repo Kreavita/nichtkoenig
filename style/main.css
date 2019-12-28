@@ -58,6 +58,7 @@ h1::after{
     text-align: center;
     position: relative;
     transition: 0.5s background-color;
+    font-size: 1.1em;
 }
 #header .titlebtn:hover{
     background-color: #00897B;
@@ -97,7 +98,7 @@ h1::after{
     max-height: 100%;
 }
 .titlebtn img{
-    height: 1.5em;
+    height: 1.6em;
     padding-right: 5px;
 }
 .titlebtn img, .titlebtn div{ 
@@ -210,6 +211,9 @@ h1::after{
 }
 .vertical-menu{
     display: grid;
+}
+.vertical-menu .item{
+    margin-top: 10px;
 }
 .toast-container{
 
