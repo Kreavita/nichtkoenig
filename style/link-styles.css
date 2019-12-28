@@ -1,26 +1,15 @@
-.cl-effect-1 a:link{
-	color: #d32f2f;
-	transition: 0.3s color;
- 	text-decoration: underline;
-}
-.cl-effect-1 a:visited {
-	color: #388E3C;
-	transition: 0.3s color;
+.cl-effect-1 a{
+	color: #009688;
  	text-decoration: none;
+	padding: 8px 0;
+	transition: 0.2s color;
+	position: relative;
 }
-.cl-effect-1 a:visited:hover {
-	color: #66BB6A;
- 	text-decoration: underline;
+.cl-effect-1 a:hover {
+	color: #80CBC4;
 }
-.cl-effect-1 a:visited:active{
-	color: #C8E6C9;
- 	text-decoration: underline;
-}
-.cl-effect-1 a:link:hover{
-	color: #ef5350;
-}
-.cl-effect-1 a:link:active{
-	color: #ffcdd2;
+.cl-effect-1 a:active{
+	color: #E0F2F1;
 }
 
 .cl-effect-1 a::before,
