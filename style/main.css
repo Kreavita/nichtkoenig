@@ -209,7 +209,7 @@ h1::after{
     max-height: 100%;
 }
 .vertical-menu{
-    display: block;
+    display: grid;
 }
 .toast-container{
 
