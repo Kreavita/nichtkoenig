@@ -155,7 +155,7 @@ h1::after{
     margin-right: -20px;
     margin-bottom: 5px;
 }
-.alertbox #action{
+.action-row{
     -moz-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
