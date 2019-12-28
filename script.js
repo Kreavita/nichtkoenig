@@ -27,7 +27,7 @@ function fadeInfo(title, content) {
 	var e=document.createElement("div");
 	e.classList.add("alertbox-container");
 	e.style.opacity=0;
-	e.innerHTML=`<div class="alertbox"><div id="title">${title}</div><div id="content">${content}</div><div id="action"><div class="superbtn" onclick="fadeRemove(this.parentElement.parentElement.parentElement)">OK</div></div></div>`
+	e.innerHTML=`<div class="alertbox"><div id="title">${title}</div><div id="content">${content}</div><div class="action-row"><div class="superbtn" onclick="fadeRemove(this.parentElement.parentElement.parentElement)">OK</div></div></div>`
 	document.body.append(e);
 	$(e).animate({opacity:1}, 200);
 }
