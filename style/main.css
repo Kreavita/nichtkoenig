@@ -206,6 +206,12 @@ h1::after{
     opacity: 1;
     max-height: 100%;
 }
+.vertical-menu{
+    display: table;
+}
+.vertical-menu input, .vertical-menu div, .vertical-menu span{
+    display: table-row;
+}
 .toast-container{
 
 }
