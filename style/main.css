@@ -207,10 +207,7 @@ h1::after{
     max-height: 100%;
 }
 .vertical-menu{
-    display: table;
-}
-.vertical-menu .item{
-    display: table-row;
+    display: block;
 }
 .toast-container{
 
