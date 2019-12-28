@@ -5,14 +5,23 @@ body{
     color: #263238;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1::after{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color:#50a2f6;
+    content: '';
+    margin-top: 20px;
+}
 .btn-dark{
     border-radius: 2px 2px 2px 2px;
     background-color: ;
 }
 #footer{
-    display: flex;
+    display: grid;
     width: 100%;
     justify-content: space-around;
+    text-align: center;
 }
 #header{
     -moz-user-select: none;
@@ -33,9 +42,10 @@ body{
     display:inline-flex;
 }
 #header .titlebtn{
-    display: flex;
+    vertical-align: middle;
+    display: table;
     margin-top: 5px;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
     transition: color 0.2s, background-color 0.2s;
     background-color: #004D40;
@@ -80,6 +90,14 @@ body{
 #header .titlebtn:active::after, #header .titlebtn:active::before{
     opacity: 1;
     max-height: 100%;
+}
+.titlebtn img{
+    height: 1.5em;
+    padding-right: 5px;
+}
+.titlebtn img, .titlebtn div{ 
+    display: table-cell;
+    vertical-align: middle;
 }
 .alertbox-container{
     position: absolute;
