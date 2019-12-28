@@ -1,7 +1,27 @@
-.cl-effect-1 a{
-	color: 
+.cl-effect-1 a:link{
+	color: #d32f2f;
+	transition: 0.3s color;
+ 	text-decoration: underline;
 }
-
+.cl-effect-1 a:visited {
+	color: #388E3C;
+	transition: 0.3s color;
+ 	text-decoration: none;
+}
+.cl-effect-1 a:visited:hover {
+	color: #66BB6A;
+ 	text-decoration: underline;
+}
+.cl-effect-1 a:visited:active{
+	color: #C8E6C9;
+ 	text-decoration: underline;
+}
+.cl-effect-1 a:link:hover{
+	color: #ef5350;
+}
+.cl-effect-1 a:link:active{
+	color: #ffcdd2;
+}
 
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
