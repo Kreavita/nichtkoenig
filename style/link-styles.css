@@ -1,9 +1,7 @@
 .cl-effect-1 a{
 	color: #009688;
  	text-decoration: none;
-	padding: 8px 0;
 	transition: 0.2s color;
-	position: relative;
 }
 .cl-effect-1 a:hover {
 	color: #80CBC4;
