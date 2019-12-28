@@ -24,7 +24,7 @@ h1::after{
     text-align: center;
 }
 #main{
-    margin-left: 10px;
+    margin: 10px;
 }
 #header{
     -moz-user-select: none;
