@@ -36,4 +36,7 @@ class Nav {
 	home(){
 		fadeUpdate("main", "jquery", "home.html");
 	}
+	rules(){
+		fadeUpdate("main", "jquery", "rules.html");
+	}
 }
