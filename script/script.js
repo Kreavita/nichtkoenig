@@ -1,7 +1,7 @@
 window.onload=function () {
 	nav = new Nav();
 	nav.home();
-    fadeInfo("Hallo", "Test123");
+    fadeInfo("Early Alpha Stage", "This Game is in early alpha stage. There are huge parts still missing and Bugs may occur.");
 }
 //FadeDesign
 function fadeRemove(obj) {
@@ -34,13 +34,13 @@ function fadeInfo(title, content) {
 
 class Nav {
 	home(){
-		fadeUpdate("main", "jquery", "html/home.html");
+		fadeUpdate("main", "jquery", "../html/home.html");
 	}
 	rules(){
-		fadeUpdate("main", "jquery", "html/rules.html");
+		fadeUpdate("main", "jquery", "../html/rules.html");
 	}
 	login(){
-		$.get("html/login.html", function(data){
+		$.get("../html/login.html", function(data){
 			fadeInfo("Login/Register", data);
 		})
 	}
