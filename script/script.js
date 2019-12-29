@@ -34,14 +34,18 @@ function fadeInfo(title, content) {
 
 class Nav {
 	home(){
-		fadeUpdate("main", "jquery", "../html/home.html");
+		fadeUpdate("main", "jquery", "html/home.html");
 	}
 	rules(){
-		fadeUpdate("main", "jquery", "../html/rules.html");
+		fadeUpdate("main", "jquery", "html/rules.html");
 	}
 	login(){
-		$.get("../html/login.html", function(data){
+		$.get("html/login.html", function(data){
 			fadeInfo("Login/Register", data);
 		})
 	}
+}
+
+class SocketIO{
+	
 }
