@@ -37,8 +37,8 @@ io.on('connection', function(socket){
 
 	socket.on('chat_global', function(msg){
 		if (token_user[socket.id]) {
-	   		console.log('global message: ' + msg);
-    		io.emit('global_message', msg);
+	   		console.log('global message: ' + token_user[socket.id]+"-->"+msg);
+    		io.emit('global_message',  {token_user[socket.id], msg});
 		}
 	});
 
