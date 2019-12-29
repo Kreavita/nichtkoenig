@@ -129,7 +129,6 @@ h1::after{
     color: #263238;
     display: table-row;
     justify-content: center;
-    max-width: 30%;
 }
 .alertbox #title{
     text-align: center;
