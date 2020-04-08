@@ -5,8 +5,12 @@
     <title>Nichtkoenig</title>
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="style/link-styles.css">
-    <script src="script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/chat.css">
+    <link rel="stylesheet" type="text/css" href="style/game-ui.css">
+    <script src="script/page.js"></script>
     <script src="script/jquery.min.js"></script>
+    <script src="script/game.js"></script>
+    <script src="script/socket.io.slim.js"></script>
 </head>
 <body>
     <div id="header">
@@ -21,11 +25,11 @@
                 </span>
         </span>
         <span class="container">
-                <span class="titlebtn" id="creategame" onclick="nav.creategame()">
+                <span class="titlebtn" id="creategame" onclick="nav.create()">
                     <img class="titleimg" src="icons/plus-square.svg"></img>
                     <div>CREATE GAME</div>
                 </span>
-                <span class="titlebtn" id="joingame" onclick="nav.joingame()">
+                <span class="titlebtn" id="joingame" onclick="nav.join()">
                     <img class="titleimg" src="icons/play-circle.svg"></img>
                     <div>JOIN GAME</div>
                 </span>        

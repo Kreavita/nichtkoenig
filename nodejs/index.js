@@ -20,7 +20,7 @@ var friendlists = {}
 io.on('connection', function(socket){
 	console.log('a user connected');
 
-	socket.on('login', login);
+	socket.on('login', (data)=>login(data, socket.id));
 
 	socket.on('queue_join', joinqueue);
 	socket.on('queue_leave', leavequeue);
@@ -42,7 +42,7 @@ io.on('connection', function(socket){
 		}
 	});
 
-	socket.on('logout', logout);
+	socket.on('logout', (data)=>logout(socket.id));
 
 	socket.on('disconnect', function(){
 		logout();
@@ -51,21 +51,21 @@ io.on('connection', function(socket){
 	});
 });
 
-function login_attempt(data) {
+function login(data, id) {
 	if(data[1]="the users password"){
-		if ((!token_user[socket.id]||token_user[socket.id]==0) && (!users[data[0]]||users[data[0]]==OFFLINE)) {
+		if ((!token_user[id]||token_user[id]===0) && (!users[data[0]]||users[data[0]]==OFFLINE)) {
 			users[data[0]] = ONLINE;
-			token_user[socket.id] = data[0];
-    		console.log(data[0] + ' logged in. ('+socket.id+')');
+			token_user[id] = data[0];
+    		console.log(data[0] + ' logged in. ('+id+')');
 		}
 	}
 }
 
-function logout() {
-	if ((token_user[socket.id]&&token_user[socket.id]!=0)) {
-		users[token_user[socket.id]] = OFFLINE;
-		token_user[socket.id] = 0;
-    	console.log(token_user[socket.id] + ' logged out. ('+socket.id+')');
+function logout(id) {
+	if ((token_user[id]&&token_user[id]!=0)) {
+		users[token_user[id]] = OFFLINE;
+		token_user[id] = 0;
+    	console.log(token_user[id] + ' logged out. ('+id+')');
 	}
 }
 
